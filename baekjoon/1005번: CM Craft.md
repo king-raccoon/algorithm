@@ -60,7 +60,7 @@ n, k = map(int, input().split())
 # 1
 cntLink = [-1] + [0] * n
 link = [[] for _ in range(n+1)]
-for _ range(k):
+for _ in range(k):
     f, b = map(int, input().split())
     cntLink[b] += 1
     link[f].append(b)
@@ -135,4 +135,4 @@ for _ in range(int(input())):  # testcase
 
 ```
 
-#python #dynamic_program #graph #topological_sort #directed_acyclic_graph
+#python #dynamic_program #graph #topological_sort #directed_acyclic_graph #memoization
